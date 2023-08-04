@@ -2,18 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'tachyons';
 import './index.css';
-import Card from './Card';
-import { robots } from './robots';
 import reportWebVitals from './reportWebVitals';
+import App from './containers/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {robots.map((robot) => {
-      console.log(robot);
-      return Card(robot);
-    })}
-  </React.StrictMode>
+  <>
+    <App />
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
