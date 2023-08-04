@@ -3,10 +3,23 @@
   font-style: normal;
   font-weight: normal;
   src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
-  }
+}
 
-h1{
+h1 {
   font-family: 'SEGA LOGO FONT';
   font-weight: 200;
+  font-size: 5vh;
   color: #0ccac4;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 8.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 8vw;
+  }
 }
