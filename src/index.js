@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'tachyons';
 import './index.css';
-import App from './App';
+import Card from './Card';
+import { robots } from './robots';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {robots.map((robot) => {
+      console.log(robot);
+      return Card(robot);
+    })}
   </React.StrictMode>
 );
 
